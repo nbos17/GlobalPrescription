@@ -7,18 +7,20 @@ const controller = require("../../controllers/controller");
 
 router.route("/")
   .get(controller.findAllDrugs)
-  .post(controller.create)
-  .post(controller.addUser);
+  //.post(controller.create)
+  
+  
 
-router
-  .route("/database")
+router.route("/database")
   .get(controller.searchAll);
   //.delete(controller.remove);
 
 router.route("/landing")
-  .get(controller.takeInfo)
-  .post(controller.addUser);
+  .get(controller.takeInfo);
 
+  
+router.route("/newUser")
+  .put(controller.addUser);
 
 
 
@@ -26,6 +28,7 @@ router.route("/landing")
 // Finds existing Username in database
 router.route("/loginn")
   .get(controller.findUser);
+
   
 
 router.route("/logged")

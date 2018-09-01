@@ -10,7 +10,7 @@ export default {
   addUser: function(userData){
     console.log("route hit");
     console.log(userData);
-    return axios.post("/api/drugs/landing", userData);
+    return axios.put("/api/drugs/newUser", userData);
   },
   findUser: function (userData) {
     console.log("this login button is working")
@@ -27,7 +27,7 @@ export default {
     localStorage.setItem("User", token.name);
     localStorage.setItem("ActiveUser", token.active);
     // setTimeout(function () { window.location = "/drugs"; }, 1000);
-    // window.location = "/drugs"
+    window.location = "/drugs"
   },
 
   getDrugs: function(data) {

@@ -131,8 +131,8 @@ const drugSeed = [
 
 const userSeed = [
   {
-    userName: "",
-    passWord: "",
+    userName: "Nate",
+    passWord: "asdf",
     userDrugs: []
   }
 ] 

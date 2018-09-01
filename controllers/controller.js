@@ -24,7 +24,7 @@ module.exports = {
 
   addUser: function (req, res) {
     console.log("THIS IS WORKING!!!!!!!!!!!!!!!!!!!");
-    console.log(req);
+    console.log(req.body);
     db.User
       .create(req.body)
       .then(dbModel => res.json(dbModel))

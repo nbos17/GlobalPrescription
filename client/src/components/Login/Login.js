@@ -36,16 +36,24 @@ class Login extends Component {
       API.addUser({
         userName: this.state.userName,
         passWord: this.state.passWord,
-        userDrugs: this.state.userDrugs
+        userDrugs: this.state.userDrugs,
+        isAuthenticated : true
       })
         .then(res => {
-            console.log(res)
-          this.setState({ userName: "", passWord: "" });
-          const token = res.data.userName;
-          console.log(token)
+          console.log(res)
+          this.setState({ userName: "", passWord: "", isAuthenticated : false });
+          const token = {
+            name : res.data.userName,
+            active : true
+          }
+          console.log(token);
           API.redirect(token);
+
         })
-        .catch(err => console.log(err));
+        .catch(err => {
+          console.log(err);
+          alert('User Name Already Exists');
+        });
     }
   };
 
