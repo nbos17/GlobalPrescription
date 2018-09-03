@@ -19,3 +19,13 @@ form {
 body {
     text-align: center;
 }
+#form {
+    background-color: white;
+}
+h1 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+}

@@ -108,7 +108,7 @@ class Login extends Component {
          <div className="container fluid">
               <h1>Welcome to Global Prescription</h1>  
               <h2>Travel Worry Free with Your Medications</h2>
-      </div>
+        </div>
         <Row>
             <DemoCarousel></DemoCarousel>
         </Row>
