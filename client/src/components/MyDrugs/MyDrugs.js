@@ -302,11 +302,6 @@ class MyDrugs extends Component {
               </Col>
             </Row>
           </div>
-          <Row>
-            <Col size="md-12">
-              <DemoCarousel />
-            </Col>
-          </Row>
 
           {/* User enter point for search */}
           <div className="container">

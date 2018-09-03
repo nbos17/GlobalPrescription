@@ -5,6 +5,7 @@ import { Input } from "../../components/Form";
 import SignupBtn from "../SignupBtn";
 import Jumbotron from "../Jumbotron";
 import { Col, Row } from "../Grid";
+import DemoCarousel from "../Carousel";
 import "./login.css";
 
 const Keycode = [];
@@ -104,6 +105,13 @@ class Login extends Component {
   render() {
     return (
       <div className="big">
+         <div className="container fluid">
+              <h1>Welcome to Global Prescription</h1>  
+              <h2>Travel Worry Free with Your Medications</h2>
+      </div>
+        <Row>
+            <DemoCarousel></DemoCarousel>
+        </Row>
         <Row>
         <div className="container fluid card">
           <form>
