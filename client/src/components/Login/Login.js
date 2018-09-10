@@ -118,7 +118,7 @@ class Login extends Component {
             <div className="form-group">
               <br />
               <br />
-              <label htmlFor="exampleInputEmail1">WElCOME TO GLOBAL PRESCRIPTION! SIGN IN</label>
+              <label htmlFor="exampleInputEmail1">GLOBAL PRESCRIPTION SIGN IN</label>
               <br />
               <br />
               <Input
