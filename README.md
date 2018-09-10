@@ -10,7 +10,6 @@ This app gives the user access to the Federal Drug Administration database that 
 You can find the app on
 [Heroku](https://evening-sea-66958.herokuapp.com/)
 
-[Bypass login](https://evening-sea-66958.herokuapp.com/drugs)
 
 **How to run the App**
 
